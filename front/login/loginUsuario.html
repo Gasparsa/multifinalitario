@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Usuário</title>
+    <link rel="stylesheet" href="loginUsuario.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="loginForm">
+        <h2>Login de Usuário</h2>
+
+        <label for="usuario">E-mail ou Nome de Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <button type="submit">Entrar</button>
+
+        <div class="senha-recuperar">
+            <a href="../recuperaSenha/recupera.html" id="recuperarSenha">Esqueceu a senha?</a>
+        </div>
+
+        <div class="cadastrar">
+            <a href="../usuario/cadastroUsuario.html" id="retornarCadastro">Ainda não é cadastrado?</a>
+        </div>
+    </form>
+</div>
+
+<script src="loginUsuario.js"></script>
+
+</body>
+</html>

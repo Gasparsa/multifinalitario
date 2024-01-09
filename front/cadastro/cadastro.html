@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Titular</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+<header>
+    <h1>PREFEITURA DE CAMPINA GRANDE</h1>
+    <p>Formulário - Cadastro de Usuário</p>
+</header>
+
+<div class="container">
+    <form id="dadosTitularForm">
+        <h2>Dados do Titular:</h2>
+        <br>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+        <label for="nis">NIS:</label>
+        <input type="text" id="nis" name="nis" required>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="rg" required>
+
+        <label for="orgaoEmissor">Orgão Emissor:</label>
+        <input type="text" id="orgaoEmissor" name="orgaoEmissor" required>
+
+        <label for="uf">UF:</label>
+        <select id="uf" name="uf" required>
+            <option value="" disabled selected>Selecione o Estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+
+        <label for="nacionalidade">Nacionalidade:</label>
+        <input type="text" id="nacionalidade" name="nacionalidade" required>
+
+        <label for="naturalidade">Naturalidade:</label>
+        <input type="text" id="naturalidade" name="naturalidade" required>
+
+        <label for="estadoCivil">UF:</label>
+        <select id="estadoCivil" name="estadoCivil" required>
+            <option value="" disabled selected>Estado Civil</option>
+            <option value="Solteiro">Solteiro(a)</option>
+            <option value="Casado">Casado(a)</option>
+            <option value="Divorciado">Divorciado(a)</option>
+            <option value="Viuvo">Viuvo(a)</option>
+            <option value="Separado">Separado(a) judicilamente</option>
+            <option value="Outros">Outros</option>
+        </select>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="" disabled selected>Sexo</option>
+            <option value="feminino">Feminino</option>
+            <option value="Masculino">Masculino</option>
+        </select>
+
+        <label for="escolaridade">Escolaridade:</label>
+        <select id="escolaridade" name="escolaridade" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="analfabeto">Analfabeto</option>
+            <option value="fundamentalIncompleto">Fundamental incompleto</option>
+            <option value="fundamentalCompleto">Fundamental completo</option>
+            <option value="medioIncompleto">Médio incompleto</option>
+            <option value="medioCompleto">Médio completo</option>
+            <option value="superiorIncompleto">Superior incompleto</option>
+            <option value="superiorCompleto">Superior completo</option>
+            <option value="mestrado">Mestrado</option>
+            <option value="doutorado">Doutorado</option>
+        </select>
+
+        <label for="telefoneResidencial">Telefone Residencial:</label>
+        <input type="tel" id="telefoneResidencial" name="telefoneResidencial">
+
+        <label for="telefoneCelular">Telefone Celular:</label>
+        <input type="tel" id="telefoneCelular" name="telefoneCelular" required>
+
+        <label for="telefoneComercial">Telefone Comercial:</label>
+        <input type="tel" id="telefoneComercial" name="telefoneComercial">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="nomeMae">Nome da Mãe:</label>
+        <input type="text" id="nomeMae" name="nomeMae" required>
+
+        <label for="dataNascimentoMae">Data de Nascimento da Mãe:</label>
+        <input type="date" id="dataNascimentoMae" required>
+
+        <label for="telefoneMae">Telefone da Mãe:</label>
+        <input type="tel" id="telefoneMae" name="telefoneMae" required>
+
+        <label for="contempladoProgramaHabitacao">Já foi contemplado em algum programa de habitação do governo?</label>
+        <select id="contempladoProgramaHabitacao" name="contempladoProgramaHabitacao">
+            <option value="" disabled selected>Selecione</option>
+            <!-- Adicione opções conforme necessário -->
+        </select>
+
+        <label for="possuiCasaPropria">Possui casa própria ou financiada em qualquer Unidade da Federação?</label>
+        <select id="possuiCasaPropria" name="possuiCasaPropria">
+            <option value="" disabled selected>Selecione</option>
+            <!-- Adicione opções conforme necessário -->
+        </select>
+
+        <h2>Dados do Cônjuge / Companheiro(a):</h2>
+        <br>
+        <label for="nomeCompletoConjuge">Nome Completo:</label>
+        <input type="text" id="nomeCompletoConjuge" name="nomeCompletoConjuge" required>
+
+        <label for="cpfConjuge">CPF:</label>
+        <input type="text" id="cpfConjuge" name="cpfConjuge" required>
+
+        <label for="nisConjuge">NIS:</label>
+        <input type="text" id="nisConjuge" name="nisConjuge" required>
+
+        <label for="dataNascimentoConjuge">Data de Nascimento:</label>
+        <input type="date" id="dataNascimentoConjuge" name="dataNascimentoConjuge" required>
+
+        <label for="rgConjuge">RG:</label>
+        <input type="text" id="rgConjuge" name="rgConjuge" required>
+
+        <label for="orgaoEmissorConjuge">Orgão Emissor:</label>
+        <input type="text" id="orgaoEmissorConjuge" name="orgaoEmissorConjuge" required>
+
+        <label for="ufConjuge">UF:</label>
+        <select id="ufConjuge" name="ufConjuge" required>
+            <option value="" disabled selected>Selecione o Estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+
+        <label for="nacionalidadeConjuge">Nacionalidade:</label>
+        <input type="text" id="nacionalidadeConjuge" name="nacionalidadeConjuge" required>
+
+        <label for="naturalidadeConjuge">Naturalidade:</label>
+        <input type="text" id="naturalidadeConjuge" name="naturalidadeConjuge" required>
+
+        <label for="sexoConjuge">Sexo:</label>
+        <select id="sexoConjuge" name="sexoConjuge" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+        </select>
+
+        <label for="localTrabalhoConjuge">Local de Trabalho:</label>
+        <input type="text" id="localTrabalhoConjuge" name="localTrabalhoConjuge" required>
+
+        <label for="telefoneConjuge">Telefone:</label>
+        <input type="text" id="telefoneConjuge" name="telefoneConjuge" required>
+
+        <label for="nomeMaeConjuge">Nome da Mãe:</label>
+        <input type="text" id="nomeMaeConjuge" name="nomeMaeConjuge" required>
+
+        <label for="dataNascimentoMaeConjuge">Data de nascimento da mãe:</label>
+        <input type="date" id="dataNascimentoMaeConjuge" name="dataNascimentoMaeConjuge" required>
+
+        <label for="telefoneMaeConjuge">Telefone da mãe:</label>
+        <input type="text" id="telefoneMaeConjuge" name="telefoneMaeConjuge" required>
+
+        <h2>Endereço para correspondência:</h2>
+        <br>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="CEP">
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" required>
+
+        <label for="complemento">Complemento:</label>
+        <input type="text" id="complemento" name="complemento">
+
+        <label for="tipoMoradia">Tipo de Moradia:</label>
+        <select id="tipoMoradia" name="tipoMoradia" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        </select>
+        
+        <h2>Estrutura Familiar:</h2>
+        <br>
+        <label for="rendaFamiliar">Renda Familiar:</label>
+        <input type="text" id="rendaFamiliar" name="rendaFamiliar" placeholder="R$ 0,00" required>
+
+        <label for="quantidadePessoas">Quantidade de pessoas na família a ser beneficiada:</label>
+        <select id="quantidadePessoas" name="quantidadePessoas" required>
+            <option value="" disabled selected>Selecione</option>
+            <!-- Adicione opções conforme necessário -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- ... -->
+        </select>
+
+        <label for="quantidadeCriancas">Quantidade de crianças na família a ser beneficiada:</label>
+        <select id="quantidadeCriancas" name="quantidadeCriancas" required>
+            <option value="" disabled selected>Selecione</option>
+            <!-- Adicione opções conforme necessário -->
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <!-- ... -->
+        </select>
+
+        <label for="idosos">Há idosos na família a ser beneficiada:</label>
+        <select id="idosos" name="idosos" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="deficientes">Há deficientes na família a ser beneficiada:</label>
+        <select id="deficientes" name="deficientes" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <div id="especificacaoDeficientes" >
+            <label>Especifique o tipo de deficiência:</label>
+            <br>
+            <input type="checkbox" id="cadeirante" name="cadeirante">
+            <label for="cadeirante">Cadeirante</label>
+            
+            <input type="checkbox" id="cegueira" name="cegueira">
+            <label for="cegueira">Cegueira</label>
+
+            <input type="checkbox" id="fisica" name="fisica">
+            <label for="fisica">Física</label>
+
+            <input type="checkbox" id="mental" name="mental">
+            <label for="mental">Mental</label>
+
+            <input type="checkbox" id="mudez" name="mudez">
+            <label for="mudez">Mudez</label>
+
+            <input type="checkbox" id="surdez" name="surdez">
+            <label for="surdez">Surdez</label>
+        </div>
+
+        <label for="pessoaHIV">Há pessoa com HIV na família a ser beneficiada:</label>
+        <select id="pessoaHIV" name="pessoaHIV" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="pessoaMicrocefalia">Há pessoa com microcefalia na família a ser beneficiada:</label>
+        <select id="pessoaMicrocefalia" name="pessoaMicrocefalia" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
